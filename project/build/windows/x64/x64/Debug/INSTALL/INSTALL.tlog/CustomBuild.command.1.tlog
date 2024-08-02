@@ -1,0 +1,10 @@
+^C:\USERS\SULAI\STUDIOPROJECTS\PROJECT\BUILD\WINDOWS\X64\CMAKEFILES\8BB16D231489B69C26A1C4E5B4B92C12\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
